@@ -1,0 +1,11 @@
+ja:
+  keikuns_home_page: "菅野契のホームページ"
+  main_p1:            "ようこそ"
+  header:
+    title:
+      home:   "ホーム"
+      about:  "概要"
+      manga:  "漫画"
+      music:  "音楽"
+      coding: "コーディング"
+      shop:   "ショップ" 

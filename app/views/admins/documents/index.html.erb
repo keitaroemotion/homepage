@@ -1,0 +1,12 @@
+<div>
+  <h1>admin page</h1>
+
+  <ul>
+  <% @documents.each do |document| %>
+    <li>[<%= document.category %>] <%= link_to document._title, document_path(id: document._title) %></li>
+  <% end %>
+  </ul>
+  <div class="create">
+    <%= link_to "Create", new_admins_document_path %>
+  </div>
+</div>

@@ -1,0 +1,80 @@
+$theme_color: #556B2F;
+$phone: 500px;
+
+.lang {
+  right:      0;
+  width:      100px;
+  position:   absolute;
+}
+
+.header_text {
+  float: left;
+}
+
+.header_logo {
+  float: left;
+  width: 80px;
+}
+
+.header_stripe {
+  background: $theme_color;
+  position:   absolute;
+  width:      100%;
+  left:       0;
+  top:        80px;
+  height:     43px;
+}
+
+.header_main {
+  position:   fixed;
+  top:        0;
+  left:       0;
+  width:      100%;
+  padding:    1em 1em;
+
+  @media only screen and (max-width: $phone) {  
+    hight:      400px;
+  }
+
+  @media only screen and (min-width: $phone) {  
+    hight:      200px;
+  }
+}
+
+.header_buttons {
+  position: relative;
+  float:    right;
+
+  @media only screen and (max-width: $phone) {  
+    width:    100%;
+    font-size: 0.7em;
+  }
+
+  @media only screen and (min-width: $phone) {  
+    width:    60%;
+  }
+}
+
+.header_button {
+  top:        10px;
+  position:   relative;
+  width:      15%;
+  float:      left;
+  text-align: center;
+  color:      white !important;
+}
+
+.footer {
+  position: absolute;
+  bottom:   0;
+  left:     0;
+  width:    100vw;
+  height:   50px;
+  background: $theme_color;
+}
+
+.footer_email {
+  position: relative;
+  left:     20px;
+  width:    50%;
+}

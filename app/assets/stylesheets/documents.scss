@@ -1,0 +1,40 @@
+// Place all the styles related to the Documents controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.create {
+  text-align: left;
+  position: relative;
+  left:     10px;
+}
+
+.back {
+  position: relative;
+  top:      10px;
+}
+
+#offset1 {
+  position: relative;
+  top:      0px;
+}
+
+.center {
+  position:      relative;
+  margin:        20px auto;
+  left:          10px;
+  height:        90vh;
+  width:         90%;
+  border:        solid 1px black;
+  border-radius: 2px;
+  padding:       0.1em 1em;
+}
+
+.document_title {
+  position:   relatvie;
+  height:     60px;
+}
+
+.document_content {
+  position:   relatvie;
+  height:     390px;
+}

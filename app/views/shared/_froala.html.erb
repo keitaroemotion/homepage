@@ -1,0 +1,32 @@
+<head>
+  <link rel="stylesheet" href="<%=min_css%>" type="text/css" />
+  <link rel="stylesheet" href="<%=min_css_2%>" />
+  <link rel="stylesheet" href="<%=min_css_3%>" type="text/css" />
+  <link rel="stylesheet" href="<%=min_css_4%>" type="text/css" />
+</head>
+
+<% jslibs.each do |x| %>
+  <script type="text/javascript" src="<%=x%>"></script>
+<% end %>
+
+<script>
+  $(function(){
+    $('textarea')
+      .froalaEditor({
+        imageUploadURL:    "<%=url%>",
+        imageAllowedTypes: ['jpeg', 'jpg', 'png', 'gif'],
+        key:               "1H3J4B11D6eF5C4C3E3E2C2C5D6A3C3xlrdbzD8hcg1=="
+      })
+      .on('froalaEditor.image.beforeUpload', function (e, editor, images) {
+      })
+      .on('froalaEditor.image.uploaded', function (e, editor, response) {
+      })
+      .on('froalaEditor.image.inserted', function (e, editor, $img, response) {
+      })
+      .on('froalaEditor.image.replaced', function (e, editor, $img, response) {
+      })
+      .on('froalaEditor.image.error', function (e, editor, error, response) {
+         alert(JSON.stringify(error));
+      });
+   })
+</script>

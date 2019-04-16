@@ -1,0 +1,11 @@
+en:
+  keikuns_home_page: "Kei Sugano's Home Page"
+  main_p1:           "Hi. Welcome"
+  header:
+    title:
+      home:   "HOME"
+      about:  "About"
+      manga:  "Manga"
+      music:  "Music"
+      coding: "Coding"
+      shop:   "Shop" 

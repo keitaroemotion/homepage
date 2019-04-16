@@ -1,0 +1,7 @@
+<% if @document %>
+  <h1>
+    <%= @document.title %>
+  </h1>
+
+  <%= raw @document.content.html_safe %>
+<% end %>

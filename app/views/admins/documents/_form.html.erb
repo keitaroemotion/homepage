@@ -1,0 +1,23 @@
+<%= form_for :document, url: {action: "created"} do |f| %>
+  <div class="document_title"> 
+    <h3>Title</h3>
+    <%= f.text_field :title, value: "" %>
+  </div>
+
+  <div class="document_title"> 
+    <h3>Category</h3>
+    <%= f.select :category, value: Document::CATEGORIES %>
+     
+  </div>
+
+  <div class="document_content"> 
+    <h3>Content</h3>
+    <%= f.text_area  :content, size: "100x23", value: "" %>
+  </div>
+
+  <%= render partial: "shared/froala", locals: {url: "upload_image"} %>
+
+  <div class="actions" id="offset1">
+    <%= f.submit %>
+  </div>
+<% end %>

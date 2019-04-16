@@ -1,0 +1,36 @@
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<div class="header_main">
+  <div class="header_logo">
+    <%= image_tag("listeng.gif", size: "60x60") %>
+  </div>
+
+  <div class="lang">
+    <%= link_to label_reverse, root_path(lang: switch_lang) %>
+  </div>
+
+  <h1 class="header_text"><%= t("keikuns_home_page") %></h1>
+
+  <div class="header_stripe">
+    <div class="header_buttons">
+      <div class="header_button">
+        <%= link_to t("header.title.home"), root_path, id: "b"  %>
+      </div>
+      <div class="header_button">
+        <%= link_to t("header.title.about"), root_path, id: "b" %>
+      </div>
+      <div class="header_button">
+        <%= link_to t("header.title.manga"), root_path, id: "b"  %>
+      </div>
+      <div class="header_button">
+        <%= link_to t("header.title.music"), root_path, id: "b"  %>
+      </div>
+      <div class="header_button">
+        <%= link_to t("header.title.coding"), root_path, id: "b"  %>
+      </div>
+      <div class="header_button">
+        <%= link_to t("header.title.shop"), root_path, id: "b"  %>
+      </div>
+    </div>
+  </div>
+</div>
