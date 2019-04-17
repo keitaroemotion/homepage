@@ -11,11 +11,11 @@
       <%=  t("anime.title2") %><br>
     </p>
     <table class="anime_panel">
-        <% @animes.each do |sequences, gif| %>
+        <% @animes.each do |zip, gif| %>
           <tr>
             <td><%= real_name(gif)                  %></td>
             <td><%= image_tag(gif, size: "100x60") %></td>
-            <td><%= link_to(t("anime.download"), "animes/onion_boy.zip", download: '') %></td>
+            <td><%= link_to(t("anime.download"), zip, download: '') %></td>
           </tr>
         <% end %>
     </table>
