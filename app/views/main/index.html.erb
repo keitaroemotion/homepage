@@ -1,39 +1,19 @@
-<%= render partial: "shared/header" %>
+<%= render partial: "shared/header", locals: {domain: "main"} %>
 
 <div class="template">
-  <div class="main_body">
-    <p><%= t("main_p1") %></p>
+  <div class="jinja">
+    <%= image_tag("jinja.jpg", width: "100%", height: "250px") %>
+  </div>
 
-    <p id="slideshow">
-      <% slideshow.each do |panel| %>
-        <img src="<%=panel%>" alt="画像1" height="500" width="360" class="active">
-      <% end %>
+  <div class="main_body">
+    <p>
+      <%= link_to t("main.animedl"), animes_path %>
     </p>
+
   </div>
 
   <%= render partial: "shared/footer" %>
 </div>
 
 
-<script type="text/javascript">
-  function slideSwitch() {
-     var $active = $('#slideshow img.active');
 
-     if ( $active.length == 0 ) $active = $('#slideshow img:last');
-
-     var $next =  $active.next().length ? $active.next()
-        : $('#slideshow img:first');
-
-     $active.addClass('last-active');
-
-     $next.css({opacity: 0.0})
-        .addClass('active')
-        .animate({opacity: 1.0}, 1000, function() {
-             $active.removeClass('active last-active');
-        });
-  }
-
-  $(function() {
-     setInterval( "slideSwitch()", 3000 );
-  });
-</script>

@@ -1,6 +1,8 @@
 en:
   keikuns_home_page: "Kei Sugano's Home Page"
-  main_p1:           "Hi. Welcome"
+  main:
+    hi: "hi"
+    animedl: "MV resources Free Download!"
   header:
     title:
       home:   "HOME"
@@ -9,3 +11,10 @@ en:
       music:  "Music"
       coding: "Coding"
       shop:   "Shop" 
+  anime:
+    title1: "This is the page in which all the resources can be downloaded and used for"
+    title2: "free. These can be used for any purposes such as MV, visual works, or anything. "
+    download: "download [sequential images]"
+      
+      
+

@@ -1,3 +1,15 @@
-// Place all the styles related to the Animes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.anime_title {
+  padding:      1em 1em;
+  position:     relative;
+}
+
+.anime_panel {
+  top:           10px;
+  z-index:       0;
+  position:      relative;
+  width:         95%;
+  margin:        auto;
+  padding:       1em 1em;
+  border:        solid 1px black;
+  border-radius: 10px;
+}

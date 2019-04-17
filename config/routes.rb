@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  resources :animes
+  resources :animes do
+     member do
+       get 'index'
+     end
+     collection do
+     end
+  end
+
   get "/images/slideshow/:id.jpg" => "main#index"
 
   namespace :admins do
@@ -30,6 +37,4 @@ Rails.application.routes.draw do
       get 'switch'
     end
   end
-
-
 end

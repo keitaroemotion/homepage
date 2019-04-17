@@ -1,3 +1,9 @@
+.jinja {
+  position: relative;
+  top:      -20px;
+  left:     0;
+}
+
 .template {
   top:       130px;
   width:     100vw;
@@ -13,10 +19,9 @@
 }
 
 #b:visited {
-  color: white !important;
+  color: black !important;
 }
 
 a:link{
-  color:white;
   text-decoration: none;
 }

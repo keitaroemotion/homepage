@@ -6,7 +6,11 @@
   </div>
 
   <div class="lang">
-    <%= link_to label_reverse, root_path(lang: switch_lang) %>
+    <% if domain == "anime" %>
+      <%= link_to label_reverse, animes_path(lang: switch_lang) %>
+    <% else %>
+      <%= link_to label_reverse, root_path(lang: switch_lang) %>
+    <% end %>
   </div>
 
   <h1 class="header_text"><%= t("keikuns_home_page") %></h1>

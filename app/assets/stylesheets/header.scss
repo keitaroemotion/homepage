@@ -1,4 +1,4 @@
-$theme_color: #556B2F;
+$theme_color: #EBEBEB;
 $phone: 500px;
 
 .lang {
@@ -23,6 +23,7 @@ $phone: 500px;
   left:       0;
   top:        80px;
   height:     43px;
+  z-index:    4;
 }
 
 .header_main {
@@ -32,6 +33,7 @@ $phone: 500px;
   width:      100%;
   padding:    1em 1em;
   background: white;
+  z-index:    4;
 
   @media only screen and (max-width: $phone) {  
     hight:      400px;
@@ -62,7 +64,6 @@ $phone: 500px;
   width:      15%;
   float:      left;
   text-align: center;
-  color:      white !important;
 }
 
 .footer {

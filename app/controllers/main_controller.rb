@@ -3,9 +3,7 @@ class MainController < ApplicationController
     I18n.locale = lang if lang
   end
 
-  private
-
   def lang
-    params["lang"]
+    super
   end
 end
