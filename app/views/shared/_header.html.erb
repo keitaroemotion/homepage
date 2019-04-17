@@ -10,26 +10,27 @@
   </div>
 
   <h1 class="header_text"><%= t("keikuns_home_page") %></h1>
+  <% lang = I18n.locale %>
 
   <div class="header_stripe">
     <div class="header_buttons">
       <div class="header_button">
-        <%= link_to t("header.title.home"), root_path, id: "b"  %>
+        <%= link_to t("header.title.home"), root_path(lang: lang), id: "b"  %>
       </div>
       <div class="header_button">
-        <%= link_to t("header.title.about"), root_path, id: "b" %>
+        <%= link_to t("header.title.about"), root_path(lang: lang), id: "b" %>
       </div>
       <div class="header_button">
-        <%= link_to t("header.title.manga"), root_path, id: "b"  %>
+        <%= link_to t("header.title.manga"), root_path(lang: lang), id: "b"  %>
       </div>
       <div class="header_button">
-        <%= link_to t("header.title.music"), root_path, id: "b"  %>
+        <%= link_to t("header.title.music"), root_path(lang: lang), id: "b"  %>
       </div>
       <div class="header_button">
-        <%= link_to t("header.title.coding"), root_path, id: "b"  %>
+        <%= link_to t("header.title.coding"), root_path(lang: lang), id: "b"  %>
       </div>
       <div class="header_button">
-        <%= link_to t("header.title.shop"), root_path, id: "b"  %>
+        <%= link_to t("header.title.shop"), root_path(lang: lang), id: "b"  %>
       </div>
     </div>
   </div>

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :animes
+  get "/images/slideshow/:id.jpg" => "main#index"
+
   namespace :admins do
     resources :documents do
       member do
