@@ -1,6 +1,18 @@
 $theme_color: #EBEBEB;
 $phone: 500px;
 
+.sns_section {
+  text-align: right;
+  position:   absolute;
+  top:        50px;
+  right:      40px;
+}
+
+.sns {
+  float:     right;
+  width:     30px;
+}
+
 .lang {
   right:      0;
   width:      100px;

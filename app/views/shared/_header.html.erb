@@ -5,6 +5,15 @@
     <%= image_tag("listeng.gif", size: "60x60") %>
   </div>
 
+  <div class="sns_section">
+    <div class="sns">
+      <%= link_to image_tag("logos/tw.png", size: "25x25"), "https://twitter.com/keisuganodev", target: "_blank" %>
+    </div>
+    <div class="sns">
+      <%= link_to image_tag("logos/blogger.png", size: "25x25"), "https://keisugano.blogspot.com/", target: "_blank" %>
+    </div>
+  </div>
+
   <div class="lang">
     <% if domain == "anime" %>
       <%= link_to label_reverse, animes_path(lang: switch_lang) %>

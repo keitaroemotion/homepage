@@ -12,6 +12,10 @@ class AnimesController < ApplicationController
     Dir["#{dir}/*"]
   end
 
+  def expand_zip(dir)
+    Dir["#{dir}/*.zip"]
+  end
+
   def lang
     super
   end
@@ -19,7 +23,7 @@ class AnimesController < ApplicationController
   private
 
   def seq_and_gif(dir)
-    zip = File.join(zip_dir, File.basename(dir) +".zip").gsub("public/", "")
+    zip = expand_zip(File.join(zip_dir, File.basename(dir))).first.gsub("public/", "")
     gif = expand(File.join(dir, "gif")).first.gsub("app/assets/images/", "")
     [zip, gif]
   end
